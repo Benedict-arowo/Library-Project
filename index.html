@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="desc">
+            <h1>My Book Library</h1>
+            <p>This is a project for <a href="https://www.theodinproject.com">The Odin Project</a> in which I have to make a library using Object Constructors.</p>
+            <p>You can also view the <a href="">Github repository</a> of this project.</p>
+        </div>
+        <div class="inputs">
+            <div id="book" class="inputField">
+                <label for="bookInputField">Book</label>
+                <input type="text" name="Book" id="bookInputField" maxlength="20">
+            </div>
+            <div id="author" class="inputField">
+                <label for="authorInputField">Author</label>
+                <input type="text" name="Author" id="authorInputField" maxlength="20">
+            </div>
+            <div id="totalPages" class="inputField">
+                <label for="totalPagesInputField">Total Pages</label>
+                <input type="number" name="Total Pages" id="totalPagesInputField" max="10000">
+            </div>
+            <div id="pagesRead" class="inputField">
+                <label for="pagesInputField">Pages Read</label>
+                <input type="number" name="Pages Read" id="pagesInputField" max="10000">
+            </div>
+            <div id="readStatus" class="inputField">
+                <label for="readStatusInputField">Read Status</label>
+                <label id="inputDesign">
+                    <input type="checkbox" name="Read status" id="readStatusInputField">
+                    <span id="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="submit">
+            <button id="submitBtn" type="button">Submit</button>
+            <p id="errorMessage">Invalid input!!</p>
+        </div>
+    </div>
+    <div class="library">
+        <table id="library">
+            <tr id="mainRow">
+                <th>Name</th>
+                <th>Author</th>
+                <th>Total Pages</th>
+                <th>Pages Read</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
